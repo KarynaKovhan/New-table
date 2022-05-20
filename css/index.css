@@ -55,7 +55,7 @@ color: #FFFFFF;
 }
 
 #itai {
-    position: absolute;
+position: absolute;
 width: 120px;
 height: 19px;
 left: 89px;
@@ -83,11 +83,11 @@ color: #BABEC8;
 
 }
 #settings {
- position: absolute;
+position: absolute;
 width: 62px;
- height: 19px;
- left: 93px;
- top: 940px;
+height: 19px;
+left: 93px;
+top: 940px;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
@@ -114,7 +114,7 @@ color: #FFFFFF;
 }
 
 .line {
- border: 1px solid #9598A0;
+border: 1px solid #9598A0;
 position: absolute;
 width: 227px;
 height: 0px;
@@ -122,41 +122,18 @@ left: 33px;
 top: 850px;
 }
 
-#firstvector {
- position: absolute;
-left: 10.93%;
-right: 97.33%;
-top: 6.67%;
-bottom: 91.2%;
-}
-
-#secondvector {
-position: absolute;
-left: 10.93%;
-right: 97.03%;
-top: 5.94%;
-bottom: 91.79%;
-}
-
-#thirdvector {
-position: absolute;
-left: 10.93%;
-right: 97.33%;
-top: 6.67%;
-bottom: 91.2%;
+#vector {
+  position: absolute;
+  left: 10.93%;
+  right: 97.03%;
+  top: 5.37%;
+  bottom: 91.2%;
 }
 
 #transaction {
 position: absolute;
 left: 12%;
-top: 17%;
-}
-
-#transactionsecond {
- position: absolute;
-left: 15%;
-right: 17%;
-bottom: 69%;
+top: 16.5%;
 }
 
 #bankcard {
@@ -175,24 +152,15 @@ height: 15px;
  top: 300px;
 }
 
-#settingicon {
- position: relative;
-width: 120px;
-height: 19px;
-left: 89px;
-top: 850px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 19px;
-color: #FFFFFF;
-}
-
 .second-container {
-display: block;
+  display: flex;
+  flex-direction: column;
 }
 
+.greencard {
+  float: left;
+  overflow: hidden
+}
 #textcard {
 position: absolute;
 left: 19.17%;
@@ -208,27 +176,30 @@ color: #111111;
 }
 
 #cardimage {
+width: 20%;
 position: absolute;
-left: 19.17%;
+left: 17.17%;
 right: 64.43%;
-top: 17.44%;
+top: 15.44%;
 bottom: 70%;
-background: #FFFFFF;
 box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
 border-radius: 12px;
+
 }
 
 #balance {
-position: relative;
-left: 20.73%;
-right: 72.71%;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 25px;
-line-height: 17px;
-color: #FFFFFF;
-top: 220px;
+    position: absolute;
+    left: 20.73%;
+    right: 72.71%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 17px;
+    color: #FFFFFF;
+    top: 220px;
+    width: 100%;
+    
 
 }
 #money {
@@ -356,11 +327,12 @@ color: #FFFFFF;
 }
 
 #card2 {
+  width: 20%;
 box-sizing: border-box;
 position: absolute;
-left: 37.19%;
+left: 44.19%;
 right: 55.41%;
-top: 20.44%;
+top: 16.44%;
 bottom: 73.52%;
 border: 2px dashed #6B6F7B;
 border-radius: 12px;
@@ -368,7 +340,7 @@ border-radius: 12px;
 
 #plus {
 position: absolute;
-left: 43.76%;
+left: 53.76%;
 right: 26.76%;
 top: 28.41%;
 bottom: 27.11%;
@@ -376,7 +348,7 @@ bottom: 27.11%;
 
 #round {
  position: absolute;
-left: 43.40%;
+left: 53.40%;
 right: 26.76%;
 top: 27.60%;
 bottom: 27.50%;
@@ -385,7 +357,8 @@ bottom: 27.50%;
 #add {
 position: absolute;
 height: 19px;
-left: 41.55%;
+width: 145px;
+left: 51.55%;
 right: 51.77%;
 top: 330px;
 font-family: 'Inter';
@@ -429,7 +402,7 @@ color: #313A4E;
 .third-container {
 display: flex;
 align-items: center;
-justify-content: center;
+flex-direction: column;
 }
 
 #searching {
@@ -467,12 +440,9 @@ border-radius: 8px;
 }
 
 #plug {
-float: right;
 position: absolute;
 left: 36%;
-right: 61.81%;
 top: 563px;
-bottom: 60.56%;
  }
 
 #employee {
@@ -498,17 +468,9 @@ font-size: 20px;
 #emp {
 position: absolute;
 left: 44.39%;
-right: 54.14%;
-top: 50.41%;
-bottom: 61.33%;
+top: 51%;
 }
 
-#loyee {
-position: absolute;
-left: 44.36%;
-right: 54.01%;
-top: 51.1%;
-}
 
 #status {
 box-sizing: border-box;
@@ -525,8 +487,7 @@ border-radius: 8px;
 
 #statussvg {
 position: absolute;
-left: 54.06%;
-right: 45.1%;
+left: 53.5%;
 top: 50.87%;
 bottom: 60.65%;
 }
@@ -566,23 +527,23 @@ border-radius: 8px;
 }
 
 #svgsort {
-position: absolute;
-width: 100px;
-height: 100px;
-left: 2120px;
-top: 560px;
+  position: absolute;
+  width: 16px;
+  height: 8px;
+  left: 2125px;
+  top: 568px;
 }
 
 .fouth-container{
 display: flex;
-justify-content: flex-start;
+flex-direction: column;
 top: 40em;
 right: 15px;
 width: 80%;
 position: absolute;
 }
 
-div.footer {
+footer {
 position: absolute;
 bottom: 0;
 right: 0;
@@ -751,7 +712,7 @@ transform: rotate(90deg);
 
 #upload {
 position: absolute;
-left: 97.09%;
+left: 96.09%;
 right: 18.64%;
 top: 51%;
 bottom: 19.3%;
